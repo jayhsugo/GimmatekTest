@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#171d29</color>
+    <color name="colorPrimaryDark">#000001</color>
+    <color name="colorAccent">#ebf0f5</color>
+
+    <color name="msg_text">#000000</color>
+    <color name="tab_bg">#171d29</color>
+    <color name="tab_text_color_normal">#ebf0f5</color>
+    <color name="tab_text_color_press">#0ed4e4</color>
+
+    <color name="viewpager_bg">#283345</color>
+    <color name="edit_pen_bg">#0ed4e4</color>
+</resources>

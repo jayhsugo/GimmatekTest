@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GimmatekTest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tab_home">首頁</string>
+    <string name="tab_newsboard">動態看板</string>
+    <string name="tab_search">探索</string>
+    <string name="tab_coincenter">哈幣中心</string>
+    <string name="tab_notification">通知</string>
+</resources>
