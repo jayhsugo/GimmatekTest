@@ -101,21 +101,12 @@ public class ChatFragment extends Fragment {
         requestQueue.add(jsonObjectRequest);
     }
 
-    private void analyzeResponseJsonData(JSONObject response) {
+    private void analyzeResponseJsonData(JSONObject j) {
 
-        // 將回傳資料擷取成完整的Json格式
-        String responseString = response.toString();
-        int endIndex = responseString.indexOf("}");
-        Log.d("MyLog", "endIndex:" + endIndex);
-        String newJsonString = responseString.substring( 0, endIndex) + "}]}";
-        Log.d("MyLog", "newJsonString:" + newJsonString);
-
-        JSONObject j;
         chatList = new ArrayList<>();
 
         try {
-            j = new JSONObject(newJsonString);
-            for (int i = 0; i < j.length(); i++) {
+            for (int i = 0; i < j.getJSONArray("feeds").length(); i++) {
                 String userName = j.getJSONArray("feeds").getJSONObject(i).getString("userName");
                 String uid = j.getJSONArray("feeds").getJSONObject(i).getString("uid");
                 String timeDiff = j.getJSONArray("feeds").getJSONObject(i).getString("timeDiff");
